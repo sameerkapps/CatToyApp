@@ -8,7 +8,7 @@
             <RowDefinition Height="2*"/>
         </Grid.RowDefinitions>
         <Frame Grid.Row="0"  BorderColor="Black" Margin="0">
-            <Grid>
+            <Grid VerticalOptions="CenterAndExpand">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
                     <!-- Title -->
@@ -24,12 +24,13 @@
                 <Label
                         Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
                         HorizontalOptions="Center"
+                        VerticalOptions="Center"
                         HorizontalTextAlignment="Center"
                         Text="Environment - TBD"/>
-
                 <Label
                         Grid.Row="1" Grid.Column="0"
                         HorizontalOptions="End"
+                        VerticalOptions="Center"
                         HorizontalTextAlignment="End"
                         Margin="0,0,5,0"
                         Text="Temp."/>
@@ -37,14 +38,15 @@
                         x:Name="txtTemp"
                         Grid.Row="1" Grid.Column="1"
                         HorizontalOptions="Start"
+                        VerticalOptions="Center"
                         HorizontalTextAlignment="Start"
                         IsReadOnly="True"
                         IsEnabled="False"
                         Margin="5,0,0,0"/>
-
                 <Label
                         Grid.Row="2" Grid.Column="0"
                         HorizontalOptions="End"
+                        VerticalOptions="Center"
                         HorizontalTextAlignment="End"
                         Margin="0,0,5,0"
                         Text="Humidity"/>
@@ -52,6 +54,7 @@
                         x:Name="txtHumidity"
                         Grid.Row="2" Grid.Column="1"
                         HorizontalOptions="Start"
+                        VerticalOptions="Center"
                         HorizontalTextAlignment="Start"
                         IsReadOnly="True"
                         IsEnabled="False"
@@ -78,7 +81,6 @@
                         VerticalOptions="CenterAndExpand"
                         Text="Stop Game"
                         Clicked="btnStop_Clicked"/>
-
             </Grid>
         </Frame>
     </Grid>
